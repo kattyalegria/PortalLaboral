@@ -1,0 +1,19 @@
+<p style="color: green"><%= notice %></p>
+
+<%= render @user %>
+
+<div>
+  <%= link_to "Edit this user", edit_user_path(@user) %> |
+  <%= link_to "Back to users", users_path %>
+
+  <%= button_to "Destroy this user", @user, method: :delete %>
+</div>
+
+<div class="card" style="width: 18rem;">
+  <div class="card-body">
+    <%= render @user %>
+    <%= link_to "Edit this user", edit_user_path(@user),class:"card-link" %> |
+    <%= link_to "Back to user", users_path,class:"card-link" %>
+    <%= button_to "Destroy this user", @user, method: :delete %>
+  </div>
+</div>
